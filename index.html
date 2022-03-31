@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Exchange</title>
+</head>
+<body>
+    <fieldset class="exchange">
+        <legend>Currency Exchange</legend>
+    <form name="Exchange" action="http://data.fixer.io/api/latest">
+    <p>
+    <label>API-key:
+        <input type="text" name="access_key" value="24a0b8891c38e8dad587364f5abb0819" readonly>
+    </label>
+    </p>
+
+    <p>
+        <label>Сurrent currency</label>
+        <select name="symbols" value="symbols">
+        <option value="USD">USD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        </select>
+
+    </p>   
+
+    <p>
+        <input type="submit" value="Send" >
+    </p>
+    </form>
+</fieldset>
+    
+</body>
+</html>
